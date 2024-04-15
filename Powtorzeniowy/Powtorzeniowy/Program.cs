@@ -1,8 +1,13 @@
-﻿class PlikGłówny
+﻿using Powtorzeniowy;
+
+class PlikGłówny
 {
     static void Main(string[] args)
     {
-        //To jest baza naszego projektu 
+        //zmienna, która jest odwołaniem do innego skryptu
+        Tablice tablica = new Tablice();
+
+        tablica.Wyswietl();
     }
 
 }
