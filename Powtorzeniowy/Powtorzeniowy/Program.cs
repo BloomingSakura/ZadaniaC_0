@@ -7,7 +7,13 @@ class PlikGłówny
         //zmienna, która jest odwołaniem do innego skryptu
         Tablice tablica = new Tablice();
 
-        tablica.Wyswietl();
+        int[] tab = tablica.Tworzenie_tablicy();
+        
+        for (int i = 0; i < tab.Length; i++)
+        {
+            Console.WriteLine(tab[i]);
+        }
+
     }
 
 }
