@@ -10,11 +10,11 @@ class PlikGłówny
         //wywołujemy metodę tworzącą tablicę
         int[] tab = tablica.Tworzenie_tablicy();
 
-        //wywołujemy metodę wyśwetlającą tablicę
         tablica.Wyswietl(tab);
-        
-       
+        //wywołujemy metodę wyśwetlającą tablicę
+        tablica.SortujBabelkowo(tab);
 
+        tablica.Wyswietl(tab);
     }
 
 }

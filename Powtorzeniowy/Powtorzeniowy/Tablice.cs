@@ -15,6 +15,7 @@ namespace Powtorzeniowy
            {
                 Console.Write(tab[i]+ ", ");
            }
+           Console.WriteLine();
         }
         public int[] Tworzenie_tablicy()
         {
@@ -32,6 +33,22 @@ namespace Powtorzeniowy
                 ints[i] = int.Parse(Console.ReadLine());
             }
             return ints;
+        }
+        
+        public void SortujBabelkowo(int[] tablica)
+        {
+            for (int i = 0; i < tablica.Length; i++)
+            {
+                for (int j = 1; j < tablica.Length - i; j++)
+                {
+                    if (tablica[j - 1] > tablica[j])
+                    {
+                        int temp = tablica[j - 1];
+                        tablica[j - 1] = tablica[j];
+                        tablica[j] = temp;
+                    }
+                }
+            }
         }
     }
 }
